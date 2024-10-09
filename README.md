@@ -1,1 +1,1 @@
-# AI & System Codesign Team's Work Highlight
+# AI & System Codesign Team's Highlight
