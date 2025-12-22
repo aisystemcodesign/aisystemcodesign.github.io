@@ -1,0 +1,249 @@
+/* Base styles for AI & Systems Co-Design Team website */
+
+/* Meta color palette */
+:root {
+    --meta-light-blue: #0082fb;
+    --meta-blue: #0064e0;
+    --meta-black: #000000;
+    --meta-gray: #1c1e21;
+    --meta-darkslategray: #1c2b33;
+    --meta-darkslategray-light: #344854;
+}
+
+/* Typography and base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 20px 20px;
+    color: var(--meta-gray);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--meta-blue);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--meta-light-blue);
+}
+
+/* Headings */
+h1 {
+    color: var(--meta-gray);
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--meta-light-blue);
+}
+
+h2 {
+    color: var(--meta-gray);
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #ddd;
+}
+
+h3 {
+    color: var(--meta-darkslategray-light);
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    color: var(--meta-darkslategray-light);
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 0;
+}
+
+/* Lists following headings - tighter spacing */
+h2 + ul,
+h3 + ul,
+h2 + p + ul,
+h3 + p + ul {
+    margin-top: -0.5em;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1em;
+}
+
+/* Logo header */
+.logo-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-header img {
+    display: block;
+    height: 2em;
+}
+
+.logo-header span {
+    font-family: "Facebook Sans", sans-serif;
+    font-size: 2em;
+    color: var(--meta-gray);
+    line-height: 45px;
+}
+
+/* Announcement banner */
+.banner {
+    background: var(--meta-darkslategray-light);
+    color: #fff;
+    padding: 20px 25px 20px 90px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-left: 8px solid var(--meta-light-blue);
+    font-size: 1.2em;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 55px;
+    height: 55px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Award badges */
+.award, .top-picks {
+    display: inline-block;
+    color: #fff;
+    padding: 2px 8px 2px 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.award {
+    background: var(--meta-light-blue);
+}
+
+.top-picks {
+    background: var(--meta-darkslategray-light);
+}
+
+.award::before, .top-picks::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background-image: url("images/stars-4.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Section spacing */
+section, .section {
+    margin-bottom: 3em;
+}
+
+/* ===================
+   Responsive Design
+   =================== */
+
+/* Tablet (768px and below) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .banner {
+        padding: 15px 20px 15px 70px;
+        font-size: 1.2em;
+    }
+
+    .banner::before {
+        width: 40px;
+        height: 40px;
+        left: 15px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        margin-top: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .banner {
+        padding: 50px 15px 15px 15px;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .banner::before {
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        top: 15px;
+        transform: translateX(-50%);
+    }
+
+    /* Stack badges on new line on mobile */
+    .award, .top-picks {
+        display: inline-block;
+        margin-top: 4px;
+        margin-left: 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
+}
