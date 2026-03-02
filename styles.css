@@ -35,7 +35,7 @@ a:hover {
 h1 {
     color: var(--meta-gray);
     font-size: 1.8em;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 0.5em;
     padding-bottom: 0.3em;
     border-bottom: 2px solid var(--meta-light-blue);
@@ -44,7 +44,7 @@ h1 {
 h2 {
     color: var(--meta-gray);
     font-size: 1.5em;
-    margin-top: 2em;
+    margin-top: 0em;
     margin-bottom: 0.5em;
     padding-bottom: 0.3em;
     border-bottom: 1px solid #ddd;
@@ -53,14 +53,14 @@ h2 {
 h3 {
     color: var(--meta-darkslategray-light);
     font-size: 1.2em;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 h4 {
     color: var(--meta-darkslategray-light);
     font-size: 1.1em;
-    margin-top: 1.5em;
+    margin-top: 0em;
     margin-bottom: 0.5em;
 }
 
@@ -206,12 +206,13 @@ section, .section {
 
     h1 {
         font-size: 1.3em;
-        margin-top: 1.5em;
+        margin-top: 0.5em;
     }
 
     h2 {
         font-size: 1.2em;
-        margin-top: 1.5em;
+        margin-top: 0;
+        padding-top: 0;
     }
 
     h3 {
