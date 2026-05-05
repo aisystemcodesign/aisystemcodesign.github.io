@@ -133,6 +133,14 @@ p {
     background-repeat: no-repeat;
 }
 
+.banner a {
+    color: #9ed0ff;
+}
+
+.banner a:hover {
+    color: #c8e4ff;
+}
+
 /* Award badges */
 .award, .top-picks {
     display: inline-block;
